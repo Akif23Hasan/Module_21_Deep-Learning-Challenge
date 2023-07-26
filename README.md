@@ -51,3 +51,7 @@ Instructions for Running the Code
 Clone this repository to your local machine.
 Make sure you have all the required dependencies installed in your environment.
 Run the Jupyter Notebook files in order, starting with "AlphabetSoupCharity.ipynb" for data preprocessing, model training, and evaluation, and then "AlphabetSoupCharity_Optimisation.ipynb" and "AlphabetSoupCharity_Optimisationv2.ipynb" for model optimisations that were undertaken.
+
+## Resources
+* IRS. Tax Exempt Organization Search Bulk Data Downloads. https://www.irs.gov/Links to an external site.
+
