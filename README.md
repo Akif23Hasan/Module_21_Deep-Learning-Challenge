@@ -3,14 +3,14 @@
 This repository contains Jupyter Notebook files and Python code for analyzing and predicting the success of Alphabet Soup-funded organizations using neural networks.
 
 ### Step 1: Preprocess the Data
-Start by running the preprocess_data.ipynb notebook, which contains the following steps:
-Read the charity_data.csv file into a Pandas DataFrame and identify the target variable(s) and feature(s) for the model.
-Drop the EIN and NAME columns as they are not relevant for the model.
-Determine the number of unique values for each column and, for columns with more than 10 unique values, analyze the number of data points for each unique value.
-Bin "rare" categorical variables together into a new value, Other, based on the number of data points.
-Encode categorical variables using pd.get_dummies().
-Split the preprocessed data into a features array, X, and a target array, y, and further divide the data into training and testing datasets using train_test_split.
-Scale the training and testing features datasets using StandardScaler from scikit-learn.
+1) Start by running the preprocess_data.ipynb notebook, which contains the following steps:
+* Read the charity_data.csv file into a Pandas DataFrame and identify the target variable(s) and feature(s) for the model.
+* Drop the EIN and NAME columns as they are not relevant for the model.
+* Determine the number of unique values for each column and, for columns with more than 10 unique values, analyze the number of data points for each unique value.
+* Bin "rare" categorical variables together into a new value, Other, based on the number of data points.
+* Encode categorical variables using pd.get_dummies().
+* Split the preprocessed data into a features array, X, and a target array, y, and further divide the data into training and testing datasets using train_test_split.
+* Scale the training and testing features datasets using StandardScaler from scikit-learn.
 
 ### Step 2: Compile, Train, and Evaluate the Model
 Open the neural_network_model.ipynb notebook to design and train a neural network model for binary classification.
