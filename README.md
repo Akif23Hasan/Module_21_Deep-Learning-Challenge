@@ -44,7 +44,7 @@ To run the code in this repository, you'll need the following dependencies:
 * Pandas
 * NumPy
 * TensorFlow
-* scikit-learn
+* Scikit-learn
 
 Instructions for Running the Code
 Clone this repository to your local machine.
