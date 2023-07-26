@@ -1,33 +1,53 @@
 # Module_21_Deep-Learning-Challenge
 
-This repository contains Jupyter Notebook files and Python code for analyzing and predicting the success of Alphabet Soup-funded organizations using neural networks.
+This repository contains the code and files for creating a binary classification model to predict if an Alphabet Soup-funded organisation will be successful based on the features in the dataset. The dataset was provided as a CSV file, which contains information about more than 34,000 organisations that have received funding from the fictional foundation, along with several columns of metadata about each organisation.
 
-## Step 1: Preprocess the Data
-1) Start by running the preprocess_data.ipynb notebook, which contains the following steps:
-* Read the charity_data.csv file into a Pandas DataFrame and identify the target variable(s) and feature(s) for the model.
-* Drop the EIN and NAME columns as they are not relevant for the model.
-* Determine the number of unique values for each column and, for columns with more than 10 unique values, analyze the number of data points for each unique value.
-* Bin "rare" categorical variables together into a new value, Other, based on the number of data points.
-* Encode categorical variables using pd.get_dummies().
-* Split the preprocessed data into a features array, X, and a target array, y, and further divide the data into training and testing datasets using train_test_split.
-* Scale the training and testing features datasets using StandardScaler from scikit-learn.
+## Getting Started
+To use the code in this repository, follow the steps below:
 
-## Step 2: Compile, Train, and Evaluate the Model
-1) Open the neural_network_model.ipynb notebook to design and train a neural network model for binary classification.
-2) Create a neural network model using TensorFlow and Keras by specifying the number of input features and nodes for each layer.
-3) Add hidden layers with appropriate activation functions to improve the model's performance.
-4) Create an output layer with an appropriate activation function for binary classification.
-5) Compile and train the model using the training data and evaluate its performance on the testing data.
-6) Implement a callback that saves the model's weights every five epochs for future reference.
-7) Calculate the model's loss and accuracy on the test data.
-8) Save the trained model to an HDF5 file named AlphabetSoupCharity.h5.
+### Step 1: Preprocess the Data
+1) Read in the charity_data.csv file to a Pandas DataFrame.
+2) Identify the target variable(s) and the feature(s) for your model.
+3) Drop the EIN and NAME columns from the dataset.
+4) Determine the number of unique values for each column.
+5) For columns with more than 10 unique values, bin "rare" categorical variables together in a new value, Other.
+6) Use pd.get_dummies() to encode categorical variables.
+7) Split the preprocessed data into features array (X) and target array (y).
+8) Split the data into training and testing datasets using the train_test_split function.
+9) Scale the training and testing features datasets using scikit-learn's StandardScaler.
 
-## Step 3: Optimize the Model
-Create a new Jupyter Notebook named AlphabetSoupCharity_Optimisation.ipynb.
-Import the required dependencies and read the charity_data.csv file into a Pandas DataFrame.
-Preprocess the dataset as done in Step 1, making adjustments based on any modifications needed from the optimization process.
-Design a neural network model with adjustments to achieve a target accuracy higher than 75%.
-Train and evaluate the optimized model.
-Save the optimized model to an HDF5 file named AlphabetSoupCharity_Optimisation.h5.
+### Step 2: Compile, Train, and Evaluate the Model
+1) Using TensorFlow and Keras, design a neural network model for binary classification.
+2) Determine the number of input features and nodes for each layer in your model.
+3) Create the first hidden layer with an appropriate activation function.
+4) Add a second hidden layer with an appropriate activation function if necessary.
+5) Create an output layer with an appropriate activation function for binary classification.
+6) Compile and train the model, and evaluate its loss and accuracy using the test data.
+7) Create a callback to save the model's weights every five epochs.
+8) Save the trained model to an HDF5 file named "AlphabetSoupCharity.h5".
 
-## Step 4: Write a Report on the Neural Network Model
+### Step 3: Optimise the Model
+1) Create a new Jupyter Notebook named "AlphabetSoupCharity_Optimisation.ipynb".
+2) Import the necessary dependencies and read in the charity_data.csv to a Pandas DataFrame.
+3) Preprocess the dataset as in Step 1, and make any necessary adjustments that came out of optimising the model.
+4) Design a new neural network model that achieves higher than 75% accuracy for binary classification.
+5) Save and export the optimised model's weights to an HDF5 file named "AlphabetSoupCharity_Optimisation.h5".
+
+### Step 4: Write a Report on the Neural Network Model
+Please refer to the attached PDF file within the repository called "AlphabetSoupReport.pdf"
+
+## Dataset
+The dataset used for this project is available in the "charity_data.csv" file. The CSV file contains information about organisations that received funding from the Alphabet Soup foundation, along with various features and metadata about each organisation.
+
+## Requirements
+To run the code in this repository, you'll need the following dependencies:
+* Pandas
+* NumPy
+* TensorFlow
+* Keras
+* scikit-learn
+
+Instructions for Running the Code
+Clone this repository to your local machine.
+Make sure you have all the required dependencies installed in your environment.
+Run the Jupyter Notebook files in order, starting with "AlphabetSoupCharity.ipynb" for data preprocessing, model training, and evaluation, and then "AlphabetSoupCharity_Optimisation.ipynb" and "AlphabetSoupCharity_Optimisationv2.ipynb" for model optimisations that were undertaken.
