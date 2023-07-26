@@ -13,14 +13,14 @@ This repository contains Jupyter Notebook files and Python code for analyzing an
 * Scale the training and testing features datasets using StandardScaler from scikit-learn.
 
 ## Step 2: Compile, Train, and Evaluate the Model
-Open the neural_network_model.ipynb notebook to design and train a neural network model for binary classification.
-Create a neural network model using TensorFlow and Keras by specifying the number of input features and nodes for each layer.
-Add hidden layers with appropriate activation functions to improve the model's performance.
-Create an output layer with an appropriate activation function for binary classification.
-Compile and train the model using the training data and evaluate its performance on the testing data.
-Implement a callback that saves the model's weights every five epochs for future reference.
-Calculate the model's loss and accuracy on the test data.
-Save the trained model to an HDF5 file named AlphabetSoupCharity.h5.
+1) Open the neural_network_model.ipynb notebook to design and train a neural network model for binary classification.
+2) Create a neural network model using TensorFlow and Keras by specifying the number of input features and nodes for each layer.
+3) Add hidden layers with appropriate activation functions to improve the model's performance.
+4) Create an output layer with an appropriate activation function for binary classification.
+5) Compile and train the model using the training data and evaluate its performance on the testing data.
+6) Implement a callback that saves the model's weights every five epochs for future reference.
+7) Calculate the model's loss and accuracy on the test data.
+8) Save the trained model to an HDF5 file named AlphabetSoupCharity.h5.
 
 ## Step 3: Optimize the Model
 Create a new Jupyter Notebook named AlphabetSoupCharity_Optimisation.ipynb.
