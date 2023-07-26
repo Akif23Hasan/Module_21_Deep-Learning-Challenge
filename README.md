@@ -44,7 +44,6 @@ To run the code in this repository, you'll need the following dependencies:
 * Pandas
 * NumPy
 * TensorFlow
-* Keras
 * scikit-learn
 
 Instructions for Running the Code
